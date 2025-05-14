@@ -19,7 +19,6 @@ class Animal:
         else: 
                 print(f"{self.nome} está dentro do peso ideal!")
                 
-
 print("====Informações do Animal====")
 nome = str(input("Nome do animal?: "))
 especie = str(input("Qual a especie do animal?: "))
@@ -30,4 +29,4 @@ a = Animal(nome,especie,peso)
 
 a.alimentar(quantidade)
 a.exibir_info()
-a.peso()
+a.peso() 
