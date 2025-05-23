@@ -17,7 +17,7 @@ class Tarefa:                                      #Criação das Classes
         return f"Tarefa: {self.titulo} - {self.descricao} - {self.prioridade}"                                   
                                  
 
-    def concluir_tarefa(sefl):                      #Concluir Tarefas
+    def concluir_tarefa(self):                      #Concluir Tarefas
         self.status = "Concluida"
         print(f"Tarefa {self.titulo} Concluida")
 
@@ -182,9 +182,6 @@ class Funcionalidades:
                 self.usuario_logado.limpar_concluidas()
 
 
-
-
-
     def listar_tarefas(self,status=None):                        #Exibir Tarefas
         print("/n====Suas tarefas====")
         for Tarefa in self.lista_tarefas:
@@ -197,8 +194,6 @@ class Funcionalidades:
             if Tarefa.id == id_Tarefa:
                 return Tarefa
         return None
-
-''
 
 teste = Funcionalidades()               #Exibindo Menu
 teste.menu_principal()
